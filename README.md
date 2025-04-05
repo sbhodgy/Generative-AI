@@ -21,6 +21,17 @@ This repository focuses on Generative AI, exploring concepts, techniques, and to
     pip install -r requirements.txt
     ```
 
+### Launching Simple LLM Application
+
+LangServe helps developers deploy LangChain chains as a REST API. To launch the example app, run the following command in the terminal:
+
+```bash 
+python serve_simple_llm.py
+```
+To access an interactive playground:
+
+```http://localhost:8000/chain/playground```
+
 
 
 
