@@ -35,7 +35,7 @@ app = FastAPI(
 add_routes(
     app,
     chain,
-    path=""
+    path="/chain"
 )
 
 if __name__ == "__main__":
