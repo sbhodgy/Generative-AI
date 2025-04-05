@@ -1,0 +1,29 @@
+# general
+python-dotenv
+pillow
+jupyter
+soundfile
+matplotlib
+
+# hugging face
+huggingface-hub
+# smolagents
+
+# langchain
+langchain-huggingface
+langchain-core
+langchain-community
+langchain-openai
+langchain-experimental
+databricks-langchain
+
+# vector stores
+chromadb
+
+# langserve
+langserve[all]
+
+# langgraph
+langgraph
+
+# aiohttp
