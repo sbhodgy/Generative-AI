@@ -13,7 +13,7 @@ This repository focuses on Generative AI, exploring concepts, techniques, and to
 
 2. **Activate the Virtual Environment**:
       ```bash
-      venv\Scripts\activate
+      .venv\Scripts\activate
       ```
 
 3. **Install Dependencies**:
