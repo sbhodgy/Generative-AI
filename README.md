@@ -8,7 +8,7 @@ This repository focuses on Generative AI, exploring concepts, techniques, and to
 
 1. **Create a Virtual Environment**:
     ```bash
-    python -m venv .venv
+    py -3.12 -m venv .venv
     ```
 
 2. **Activate the Virtual Environment**:
