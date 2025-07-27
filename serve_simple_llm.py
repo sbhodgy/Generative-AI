@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-# from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
-from databricks_langchain import ChatDatabricks
+from langchain_openai import ChatOpenAI
 from langserve import add_routes
 
 system_template = "You are an assistant that translates text. Translate the user text into {language}."
@@ -10,17 +9,7 @@ prompt_template = ChatPromptTemplate.from_messages(
     [("system", system_template), ("user", "{text}")]
 )
 
-model = ChatDatabricks(endpoint="databricks-meta-llama-3-3-70b-instruct", temperature=0.0)
-
-# llm = HuggingFaceEndpoint(
-#     repo_id="microsoft/Phi-3-mini-4k-instruct",
-#     task="text-generation",
-#     max_new_tokens=512,
-#     do_sample=False,
-#     repetition_penalty=1.03
-# )
-
-# model = ChatHuggingFace(llm=llm)
+model = ChatOpenAI(model="gpt-4o-mini-2024-07-18")
 
 parser = StrOutputParser()
 
